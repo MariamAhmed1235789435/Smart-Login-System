@@ -1,4 +1,3 @@
-<!-- registration.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,29 +7,57 @@
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
-
   </head>
-  <body>
-    <div class="d-flex justify-content-center align-items-center h-100 ">
-      <div class="h-75 w-25 cont ">
-    
-            <div class="p-5 text-center ">
-               <h1 class="mb-3">Create your account</h1>
-              <input type="email" id="username" class="form-control mb-3" placeholder="Enter Your Email">
-              <div class="alert alert-danger d-none" id="email-alert"></div>
-              <input type="password" id="password" class="form-control mb-5" placeholder="Enter Your Password">
-           
-                 <button onclick="register()" class="btn btn-primary mb-5">Sign Up</button>
-                 
-       
-                  <p class="mt-2">Already have an account? <a href="./index.html">Login</a></p>
-                 
-                </div>
-             
+  <body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- Form Section -->
+        <div class="col-lg-6 col-md-8 col-sm-10 col-12">
+          <div class="shadow p-4 rounded bg-white">
+            <h1 class="text-center mb-4">Create Your Account</h1>
+            <form>
+              <!-- Email Input -->
+              <div class="mb-3">
+                <input
+                  type="email"
+                  id="username"
+                  class="form-control"
+                  placeholder="Enter Your Email"
+                  required
+                />
+                <div class="alert alert-danger d-none mt-2" id="email-alert"></div>
+              </div>
+              <!-- Password Input -->
+              <div class="mb-4">
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control"
+                  placeholder="Enter Your Password"
+                  required
+                />
+              </div>
+              <!-- Signup Button -->
+              <div class="d-grid mb-4 d-flex justify-content-center">
+                <button
+                  type="button"
+                  onclick="register()"
+                  class="btn btn-primary"
+                >
+                  Sign Up
+                </button>
+              </div>
+              <!-- Login Link -->
+              <p class="text-center">
+                Already have an account? <a href="./index.html">Login</a>
+              </p>
+            </form>
+          </div>
+        </div>
       </div>
-      
     </div>
 
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
