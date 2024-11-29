@@ -1,0 +1,36 @@
+<!-- registration.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+  </head>
+  <body>
+    <div class="d-flex justify-content-center align-items-center h-100 ">
+      <div class="h-75 w-25 cont ">
+    
+            <div class="p-5 text-center ">
+               <h1 class="mb-3">Create your account</h1>
+              <input type="email" id="username" class="form-control mb-3" placeholder="Enter Your Email">
+              <div class="alert alert-danger d-none" id="email-alert"></div>
+              <input type="password" id="password" class="form-control mb-5" placeholder="Enter Your Password">
+           
+                 <button onclick="register()" class="btn btn-primary mb-5">Sign Up</button>
+                 
+       
+                  <p class="mt-2">Already have an account? <a href="./index.html">Login</a></p>
+                 
+                </div>
+             
+      </div>
+      
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
